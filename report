@@ -1,0 +1,67 @@
+......READING THE DATASET....
+
+
+......PREPROCESSING....
+
+.....TRAINING THE NB CLASSIFIER....
+
+
+FOR DEVLOPMENT DATA:
+Accuracy =  0.9584158415841584
+              precision    recall  f1-score   support
+
+       HATE
+      0.979     0.979     0.979       141
+       NONE
+      0.975     0.980     0.978       203
+       OFFN
+      0.917     0.986     0.950       145
+       PRFN
+      1.000     0.250     0.400        16
+
+    accuracy                          0.958       505
+   macro avg      0.968     0.799     0.827       505
+weighted avg      0.960     0.958     0.952       505
+
+Confusion Matrix :
+ [[138   2   1   0]
+ [  0 199   4   0]
+ [  0   2 143   0]
+ [  3   1   8   4]]
+Word count for test data label with NB using Count Vectorizer
+___________________________________________
+|  HATE  | OFFENSIVE |  PROFANE  |  NONE  |
+|   269  |    316    |   0   |   568   |
+___________________________________________
+
+Training The SVM Classifier....
+
+
+Accuracy =  0.9584158415841584
+
+              precision    recall  f1-score   support
+
+       HATE
+      0.993     0.986     0.989       141
+       NONE
+      0.918     0.995     0.955       203
+       OFFN
+      0.986     0.986     0.986       145
+       PRFN
+      0.000     0.000     0.000        16
+
+    accuracy                          0.958       505
+   macro avg      0.724     0.742     0.733       505
+weighted avg      0.929     0.958     0.943       505
+
+Confusion Matrix :
+ [[139   2   0   0]
+ [  0 202   1   0]
+ [  0   2 143   0]
+ [  1  14   1   0]]
+Word count for test data label with SVM using TFIDF Vectorizer
+___________________________________________
+|  HATE  | OFFENSIVE |  PROFANE  |  NONE  |
+|   13  |    9    |   0   |   1131   |
+___________________________________________
+

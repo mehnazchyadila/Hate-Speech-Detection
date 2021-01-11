@@ -1,0 +1,4 @@
+HATE = Hate Speech
+OFFN = Offensive
+PRFN = Profane 
+NONE = none of the above (neutral)
